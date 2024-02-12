@@ -1,7 +1,7 @@
 **README**
 
 **Project Description:**
-This project, completed as part of a take-home assignment for the Detroit Lions, involves the development of Python scripts and SQL queries for data manipulation and analysis. I created the fetcher to fetch data from a random api and I stored that data in a data base & made 5 interesting queries in SQL about the 200 people from that random API.
+This project, completed as part of a take-home assignment for the Detroit Lions, involves the development of Python scripts and SQL queries for data manipulation and analysis. I created the fetcher to fetch data from a random api and I stored that data in a data base & made 5 interesting queries in SQL about the 200 people from that random API. Then i converted my json file to big query on google cloud.
 
 **Python Script:**
 - **fetch_api_data:** A script is provided to fetch data from a random API and store it in a JSON file.

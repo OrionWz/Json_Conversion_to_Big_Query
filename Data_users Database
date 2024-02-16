@@ -1,0 +1,69 @@
+CREATE TABLE data_users (
+    data_users_id SERIAL PRIMARY KEY,
+    First_Name VARCHAR(100),
+    Last_Name VARCHAR(100),
+    Gender VARCHAR(100),
+    Age INT
+    )
+
+
+
+
+    select * from data_users
+
+
+
+    insert into data_users(
+    values(200, 'Jurema', 'Campos', 'female', 35)
+    )
+
+
+    delete from data_users 
+    where first_name = 'Jurema'
+
+
+
+    Create table MulticulturalData 
+    (
+    Culture_id int,
+    Occupation varchar(100),
+    Ethnicity varchar(100),
+    State_And_City varchar(100)
+    )
+
+
+    insert into MulticulturalData(
+    values()
+    )
+
+    select * from MulticulturalData 
+
+
+    insert into MulticulturalData(
+    values(200, 'Pharmacist', 'Indian', 'Charlotte, North Carolina')
+    )
+
+
+
+
+    select *
+    from data_users
+    inner join MulticulturalData
+    on data_users.data_users_id = MulticulturalData.Culture_id
+
+SELECT * FROM data_users WHERE Gender = 'female' AND CAST(Age AS INT) >= 60;
+
+
+SELECT * FROM data_users WHERE Gender = 'male' AND CAST(Age AS INT) >= 60;
+
+
+SELECT Gender, COUNT(*) as GenderCount FROM data_users GROUP BY Gender;
+
+
+SELECT * FROM data_users WHERE First_Name LIKE 'A%';
+
+
+SELECT * FROM data_users WHERE CAST(Age AS INT) BETWEEN 18 AND 25 ORDER BY CAST(Age AS INT);
+
+
+SELECT Age, COUNT(*) as AgeCount FROM data_users GROUP BY Age ORDER BY AgeCount DESC LIMIT 5;

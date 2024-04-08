@@ -1,0 +1,16 @@
+SELECT * FROM data_users WHERE Gender = 'female' AND CAST(Age AS INT) >= 60;
+
+
+SELECT * FROM data_users WHERE Gender = 'male' AND CAST(Age AS INT) >= 60;
+
+
+SELECT Gender, COUNT(*) as GenderCount FROM data_users GROUP BY Gender;
+
+
+SELECT * FROM data_users WHERE First_Name LIKE 'A%';
+
+
+SELECT * FROM data_users WHERE CAST(Age AS INT) BETWEEN 18 AND 25 ORDER BY CAST(Age AS INT);
+
+
+SELECT Age, COUNT(*) as AgeCount FROM data_users GROUP BY Age ORDER BY AgeCount DESC LIMIT 5;

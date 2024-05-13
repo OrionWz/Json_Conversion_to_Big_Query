@@ -13,34 +13,26 @@ Prefect (pip install prefect)
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your_username/your_repo.git
-cd your_repo
+
 Usage
 Fetching Data
 To fetch data from the API, run:
 
-bash
-Copy code
 python fetch_data.py
 Processing Data
 To process the data and store it in a SQL table, run:
 
-bash
-Copy code
+
 python process_data.py
 Extracting to JSON
 To extract the data to a JSON file, run:
 
-bash
-Copy code
+
 python extract_to_json.py
 Uploading to BigQuery
 To upload the JSON file to BigQuery on Google Cloud, run:
 
-bash
-Copy code
+
 python upload_to_bigquery.py
 Configuration
 You can configure the API URL, SQL table details, JSON file paths, and BigQuery credentials in the respective Python files.
